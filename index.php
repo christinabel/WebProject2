@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         if ($answer === $correctAnswer) {
             $_SESSION['level'] = 2;
+            $_SESSION['puzzle1_solved'] = true;
             $useFadeEffect = true;
         } else {
             $feedback = "Wrong answer! Try again.";
@@ -31,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="level_1_styles.css">
     <title>Level 1</title>
     <?php if ($useFadeEffect): ?>
-        <meta http-equiv="refresh" content="1;url=level2.php">
+        <meta http-equiv="refresh" content="1;url=puzzle2.php">
     <?php endif; ?>
 </head>
 <body>
