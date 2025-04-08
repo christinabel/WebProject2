@@ -27,7 +27,7 @@ session_destroy();
         <a href="homepage.html"><button>Play Again</button></a>
     </div>
 
-    <!-- Winning image (optional, you can change the image or remove it) -->
+    <!-- Winning image -->
     <img src="./images/vistory.png" alt="Victory" class="flash-image">
 </body>
 
